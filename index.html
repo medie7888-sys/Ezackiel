@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Recipe Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: #d35400;
+    padding: 1em;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1em;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+  }
+  header, footer {
+    background-color: #e67e22;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  main {
+    padding: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+  .recipe {
+    background-color: #fff3e0;
+    border: 1px solid #d35400;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  .recipe img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  h2 {
+    color: #d35400;
+  }
+  ul, ol {
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Recipe Website</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+    <li><a href="#" class="nav-link" data-section="recipes">Recipes</a></li>
+    <li><a href="#" class="nav-link" data-section="contact">Contact Us</a></li>
+    <li><a href="#" class="nav-link" data-section="about">About Us</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="home" class="active">
+    <h2>Welcome to My Recipe Website!</h2>
+    <p>Discover delicious recipes, learn more about us, or get in touch!</p>
+  </section>
+
+  <section id="recipes">
+    <h2>Recipes</h2>
+    
+    <h3>Lunch Recipes</h3>
+    <article class="recipe">
+      <h2>Chicken Stir-Fry</h2>
+      <img src="C:\Users\Admin\Pictures\223382_chicken-stir-fry_Rita-1x1-1-b6b835ccfc714bb6a8391a7c47a06a84.jpg" alt="Chicken Stir-Fry" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>2 chicken breasts, sliced</li>
+        <li>2 cups mixed vegetables (broccoli, carrots, bell peppers)</li>
+        <li>2 tbsp soy sauce</li>
+        <li>1 tbsp oil</li>
+        <li>1 tsp garlic, minced</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Heat oil in a pan over medium heat.</li>
+        <li>Add garlic and chicken, cook until browned.</li>
+        <li>Add vegetables and soy sauce, stir-fry for 5-7 minutes.</li>
+        <li>Serve hot with rice.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Vegetable Pasta</h2>
+      <img src="C:\Users\Admin\Pictures\quick-vegan-pasta-vegetable-stir-fry-with-ginger-and-garlic-8.jpg"alt="Vegetable Pasta" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>200g pasta</li>
+        <li>1 cup cherry tomatoes, halved</li>
+        <li>1 zucchini, sliced</li>
+        <li>2 tbsp olive oil</li>
+        <li>1/2 cup Parmesan cheese</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Cook pasta according to package instructions.</li>
+        <li>Sauté vegetables in olive oil for 5 minutes.</li>
+        <li>Mix with drained pasta and cheese.</li>
+        <li>Serve warm.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Beef Tacos</h2>
+      <img src="C:\Users\Admin\Pictures\authentic-mexican-ground-beef-taco-recipe-featured.webp" alt="Beef Tacos" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>500g ground beef</li>
+        <li>8 taco shells</li>
+        <li>1 onion, chopped</li>
+        <li>1 tsp cumin</li>
+        <li>Lettuce, cheese, and salsa for topping</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Cook beef and onion in a pan until browned.</li>
+        <li>Add cumin and season to taste.</li>
+        <li>Fill taco shells with mixture and toppings.</li>
+        <li>Serve immediately.</li>
+      </ol>
+    </article>
+
+    <h3>Dessert Recipes</h3>
+    <article class="recipe">
+      <h2>Chocolate Cake</h2>
+      <img src="C:\Users\Admin\Pictures\images (4).jpg" alt="Chocolate Cake" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>1 cup flour</li>
+        <li>1/2 cup sugar</li>
+        <li>1/4 cup cocoa powder</li>
+        <li>2 eggs</li>
+        <li>1/2 cup milk</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Preheat oven to 350°F (175°C).</li>
+        <li>Mix dry ingredients together.</li>
+        <li>Add eggs and milk, stir until smooth.</li>
+        <li>Pour into greased pan and bake for 35 minutes.</li>
+        <li>Let cool before serving.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Fruit Salad</h2>
+      <img src="C:\Users\Admin\Pictures\images (1).jpg" alt="Fruit Salad" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>2 apples, diced</li>
+        <li>1 banana, sliced</li>
+        <li>1 cup strawberries</li>
+        <li>1 orange, segmented</li>
+        <li>2 tbsp honey</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Combine all fruits in a bowl.</li>
+        <li>Drizzle with honey.</li>
+        <li>Mix gently and chill for 30 minutes.</li>
+        <li>Serve cold.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Cheesecake</h2>
+      <img src="C:\Users\Admin\Pictures\images (2).jpg" alt="Cheesecake" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>200g cream cheese</li>
+        <li>1/2 cup sugar</li>
+        <li>2 eggs</li>
+        <li>1 tsp vanilla</li>
+        <li>1 cup graham cracker crust</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Prepare crust in a pan.</li>
+        <li>Beat cream cheese, sugar, eggs, and vanilla.</li>
+        <li>Pour over crust and bake at 325°F for 50 minutes.</li>
+        <li>Cool and refrigerate before serving.</li>
+      </ol>
+    </article>
+
+    <h3>Appetizer Recipes</h3>
+    <article class="recipe">
+      <h2>Caesar Salad</h2>
+      <img src="C:\Users\Admin\Pictures\220905_DD_Chx-Caesar-Salad_051.jpg" alt="Caesar Salad" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>1 head romaine lettuce</li>
+        <li>1/2 cup croutons</li>
+        <li>1/4 cup grated Parmesan cheese</li>
+        <li>Caesar dressing</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Wash and chop lettuce.</li>
+        <li>Toss lettuce with dressing.</li>
+        <li>Add croutons and cheese on top.</li>
+        <li>Serve immediately.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Bruschetta</h2>
+      <img src="C:\Users\Admin\Pictures\simply-oragnic-Roasted-Tomato-Bruschetta-1080x1080-thumbnail.webp" alt="Bruschetta" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>4 slices bread, toasted</li>
+        <li>2 tomatoes, diced</li>
+        <li>1 tbsp basil, chopped</li>
+        <li>1 garlic clove, minced</li>
+        <li>2 tbsp olive oil</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Mix tomatoes, basil, garlic, and oil.</li>
+        <li>Spoon onto toasted bread.</li>
+        <li>Drizzle with more oil if needed.</li>
+        <li>Serve as a starter.</li>
+      </ol>
+    </article>
+
+    <article class="recipe">
+      <h2>Stuffed Mushrooms</h2>
+      <img src="C:\Users\Admin\Pictures\AR-JF-15184-Mouth-Watering-Mushrooms-ddmfs-2x1-e6418200bc6e44f7971b53ef7b675bb7.jpg" alt="Stuffed Mushrooms" />
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>12 button mushrooms</li>
+        <li>1/2 cup cheese, grated</li>
+        <li>1/4 cup breadcrumbs</li>
+        <li>1 garlic clove, minced</li>
+        <li>2 tbsp butter</li>
+      </ul>
+      <h3>Procedure:</h3>
+      <ol>
+        <li>Remove stems from mushrooms.</li>
+        <li>Mix cheese, breadcrumbs, and garlic.</li>
+        <li>Fill caps and top with butter.</li>
+        <li>Bake at 375°F for 15 minutes.</li>
+      </ol>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required><br/><br/>
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required><br/><br/>
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>My recipe website was created to share simple, tasty, and affordable recipes. This website is made as a school project and for people who love cooking.</p>
+  </section>
+</main>
+
+<footer>
+  <p>@ 2026 my recipe </p>
+</footer>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('main section');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = link.getAttribute('data-section');
+
+      // Remove active class from all sections and nav links
+      sections.forEach(section => section.classList.remove('active'));
+      navLinks.forEach(nav => nav.classList.remove('active'));
+
+      // Add active class to clicked nav link and corresponding section
+      link.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
+
